@@ -1,8 +1,8 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera.ar" android:required="true" />
     <application android:theme="@style/Theme.GrowRoomPlanner" android:label="3D Grow Room Planner" android:allowBackup="false" android:supportsRtl="true">
-        <meta-data android:name="com.google.ar.core" android:value="required" />
+        <meta-data android:name="com.google.ar.core" android:value="required" tools:replace="android:value" />
         <activity android:name=".MainActivity" android:screenOrientation="fullSensor" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
